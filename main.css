@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+:root {
+  --header: #132a13;
+  --subtitles: #31572c;
+  --section-backgrounds: #4f772d;
+  --para: #90a955;
+  --background: #ecf39e;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato;
+  background-color: #ddf9c2;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-main {
+  background-image: linear-gradient(45deg, #3c7e19, #3e9a0d);
+  color: black;
+  width: 80vw;
+  height: 80vh;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "Name Description";
+}
+
+.textBox {
+  grid-area: Name;
+  display: flex;
+  margin-left: 1.5rem;
+  flex-direction: column;
+  justify-self: start;
+  align-self: center;
+}
+
+.description {
+  grid-area: Description;
+  font-size: 36px;
+}
