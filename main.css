@@ -104,17 +104,22 @@ body {
   background-color: var(--text);
 }
 
-.descwrapper {
-  text-align: center;
-  padding: 0px 25px 25px 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.imgwrapper {
   grid-area: Description;
   font-size: clamp(16px, 3vw, 36px);
+  height: 100%;
+  padding: 8%;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .codeimg {
-  width: clamp(5%, 40%, 45%);
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  width: clamp(90px, 80%, 200px);
+  /* max: 155px min:110 */
+  cursor: pointer;
 }
